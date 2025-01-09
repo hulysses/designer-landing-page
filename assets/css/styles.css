@@ -326,3 +326,13 @@ header {
 .buttons {
   margin-top: 20px;
 }
+
+.bg-team {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.bg-rgba-team {
+  background-color: rgba(0, 0, 0, 0.5);
+}
