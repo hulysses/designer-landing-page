@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 14px;
   overflow-x: hidden;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -125,7 +126,7 @@ header {
   font-weight: bold;
 }
 
-.hero .pointers {
+.pointers {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -135,7 +136,7 @@ header {
   margin-top: -50px;
 }
 
-.hero .pointer {
+.pointer {
   width: 10px;
   height: 10px;
   border: 1px solid #b28756;
@@ -143,7 +144,7 @@ header {
   cursor: pointer;
 }
 
-.hero .selected {
+.selected {
   background-color: #b28756;
 }
 
@@ -309,7 +310,9 @@ header {
   gap: 10px;
 }
 
-.section-projects-photo-info h5 {
+.section-projects-photo-info h5,
+.section-coworker h4,
+.section-body h4 {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
@@ -335,4 +338,101 @@ header {
 
 .bg-rgba-team {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#team .section-body {
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.section-coworker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.section-coworker .img,
+.client-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.section-coworker h4,
+.section-coworker p,
+.section-body h4 {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.section-coworker p,
+#clients .section-body p {
+  font-size: 0.75rem;
+  margin-bottom: 40px;
+}
+
+.section-coworker-socialmedias {
+  display: flex;
+  gap: 10px;
+}
+
+.section-coworker-socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #bebebe;
+}
+
+.section-coworker-socialmedia:hover {
+  background-color: #b28756;
+}
+
+.section-coworker-socialmedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-coworker-socialmedia img {
+  width: 15px;
+  height: auto;
+  object-fit: fit;
+}
+
+#clients .section-body {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.quote img {
+  width: 20px;
+  height: auto;
+}
+
+.quote p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 20px;
+}
+
+#clients .pointer {
+  margin-top: 270px;
 }
