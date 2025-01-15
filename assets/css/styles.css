@@ -436,3 +436,19 @@ header {
 #clients .pointer {
   margin-top: 270px;
 }
+
+.clients-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
